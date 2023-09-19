@@ -1,14 +1,25 @@
+#include <stdio.h>
 #include "main.h"
+
 /**
- * _isalpha - checks if a variable is an alphabet
- *
- * @a: the variable to be checked
- *
- * Return: 1 for letters o for rest
+ * _isalpha - checks whether alphabets character
+ * @c: int
+ * description - return 1 if upper or lower
+ * Return: 1 if alphabet 0 otherwise
  */
-int _isalpha(int a)
+
+int _isalpha(int c)
 {
-	if ((a >= 97 && a <= 122) || (a >= 65 && a <= 90))
+	if (c >= 97 && c <= 122)
+	{
 		return (1);
-	return (0;
+	}
+	else if (c >= 65 && c <= 90)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

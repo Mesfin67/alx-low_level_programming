@@ -1,15 +1,22 @@
 #include "main.h"
-/** 
- * display letters a up to z 10 times
+/**
+ * print_alphabet_x10 - Prints the alphabet 10 times
+ *
+ * Return: void
+ * 
  */
 void print_alphabet_x10(void)
 {
-	int letter, l;
+	int i;
 
-	for (l = 0; l <= 9; l++)
+	for (i = 0; i < 10; i++)
 	{
-		for (letter = 'a'; letter <= 'z'; letter++)
-			_putchar(letter);
+		char c;
+
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
 		_putchar('\n');
 	}
 }
