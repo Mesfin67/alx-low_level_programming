@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
  * malloc_checked - allocates memory using malloc, exits with status code 98 if it fails
  *
- * This function allocates a block of memory `memory_size` bytes in size using malloc.
+ * This function allocates a block of memory `b` bytes in size using malloc.
  * If the memory allocation fails, the function exits the program with status code 98.
  *
  * @memory_size: size of the memory block to be allocated in bytes
