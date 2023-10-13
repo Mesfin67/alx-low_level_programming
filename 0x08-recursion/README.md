@@ -1,0 +1,1 @@
+This directory contains exercises on recursion for the alx course. These exercises cover a range of topics, such as printing a string in reverse, finding the factorial of a number, and reversing a linked list
