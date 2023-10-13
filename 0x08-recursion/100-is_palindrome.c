@@ -10,7 +10,7 @@
 int is_palindrome(char *string)
 {
 	int index = 0;
-	int length = find_string_length(string);
+	int length = find_strlen(string);
 
 	if (!(*string))
 		return (1);
@@ -19,20 +19,20 @@ int is_palindrome(char *string)
 }
 
 /**
-* find_string_length - Returns the length of a string.
+* find_strlen - Returns the length of a string.
 * @string: The string to be measured.
 *
 * Return: The length of the string.
 */
 
-int find_string_length(char *string)
+int find_strlen(char *string)
 {
 	int length = 0;
 
 	if (*(string + length))
 	{
 		length++;
-		length += find_string_length(string + length);
+		length += find_strlen(string + length);
 	}
 
 	return (length);
