@@ -22,9 +22,6 @@ typedef struct dog dog_t;
 
 /**
  * init_dog - initializes a dog struct
- *
- * This function initializes a dog struct with the given name, age, and owner.
- *
  * @d: a pointer to the dog struct to be initialized
  * @name: the dog's name
  * @age: the dog's age in years
