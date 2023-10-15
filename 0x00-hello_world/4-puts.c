@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - using put function
- * Description the put function main function
+ * main - entry point
+ * Description - puts function used to print a string
  * Return: Always 0 (Success)
  */
 int main(void)
