@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prntf function
- *
- * show the size of the different data types
+ * main - entry point
+ * description -prints the size of various types
+ * 
  * Return: ALways 0
  */
 
