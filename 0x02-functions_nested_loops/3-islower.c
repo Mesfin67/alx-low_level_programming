@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _islower - function name
- * @c : varable
+ * @c : variable
  * description : checks if it is caselower
  *
  */
