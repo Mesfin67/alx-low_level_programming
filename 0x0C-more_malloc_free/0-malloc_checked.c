@@ -1,24 +1,18 @@
 #include "main.h"
+
 /**
- * malloc_checked - allocates memory using malloc, exits with status code 98 if it fails
+ * malloc_checked - allocates memory using malloc, exit(98) if it fails
+ * @b: size of the memory block to be allocated
  *
- * This function allocates a block of memory `b` bytes in size using malloc.
- * If the memory allocation fails, the function exits the program with status code 98.
- *
- * @memory_size: size of the memory block to be allocated in bytes
- *
- * Return: a pointer to the allocated memory block, or NULL if the allocation fails
+ * Return: pointer to the address of the memory block
  */
-
-void *malloc_checked(size_t memory_size)
+void *malloc_checked(unsigned int b)
 {
-    void *memory_block;
+	void *block;
 
-    memory_block = malloc(memory_size);
-    if (memory_block == NULL) {
-        exit(98);
-    }
-
-    return memory_block;
+	block = malloc(b);
+	if (block == NULL)
+		exit(98);
+	return (block);
 }
 
