@@ -3,30 +3,26 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
- * @name: the dog's name
- * @age: the dog's age in years
- * @owner: the dog's owner's name
+ *struct dog - a new type of data
+ *representing a dog
+ *@name: name of dog
+ *@age: age of dog
+ *@owner: owner's name
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 /**
- * @typedef dog_t: a typedef for struct dog
+ *dog_t - Typedef for struct dog
  */
 typedef struct dog dog_t;
 
-/**
- * init_dog - initializes a dog struct
- * @d: a pointer to the dog struct to be initialized
- * @name: the dog's name
- * @age: the dog's age in years
- * @owner: the dog's owner's name
- */
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
