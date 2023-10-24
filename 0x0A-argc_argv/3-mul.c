@@ -1,27 +1,23 @@
-#include <stdio.h>
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
- * main - prints the product of two numbers
- * @num_args: number of command-line arguments
- * @args: array of command-line arguments
- * Return: 0 on success, 1 on failure
+ *main -  prints its name
+ *@argc : command no
+ *@argv : command list
+ *Return: 0 (success).
  */
-int main(int num_args, char *args[])
+int main(int argc, char *argv[])
 {
-	int factor1, factor2, product;
+	int n1 = 0, n2 = 0, mult;
 
-	if (num_args <= 2)
+	if (argc > 2)
 	{
-		printf("Error: Insufficient number of arguments.\n");
-		return (1);
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
+		mult = n1 * n2;
+		printf("%d\n", mult);
 	}
-
-	factor1 = atoi(args[1]);
-	factor2 = atoi(args[2]);
-	product = factor1 * factor2;
-
-	printf("%d\n", product);
-
+	else
+		printf("Error\n");
 	return (0);
 }
