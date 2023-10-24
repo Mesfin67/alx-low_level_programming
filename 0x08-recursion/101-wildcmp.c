@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
-* wildcmp - compares two strings and returns 1 if identical
-* @string1: string to be checked
-* @string2: pattern to be used
-*
-* Return: 1 if identical, 0 otherwise
-*/
+ * wildcmp - compares two strings and returns 1 if identical
+ * @s1: string to be checked
+ * @s2: pattern to be used
+ *
+ * Return: 1 if identical, 0 otherwise
+ */
 
-int wildcmp(char *string1, char *string2)
+int wildcmp(char *s1, char *s2)
 {
-	if (*string2 == '\0')
-		return (*string1 == '\0');
-	if (*string2 == *string1)
-		return (*string1 != '\0' && wildcmp(string1 + 1, string2 + 1));
-	if (*string2 == '*')
-		return (wildcmp(string1, string2 + 1) || (*string1 != '\0' && wildcmp(string1 + 1, string2)));
-       return (0);
+	if (*s2 == '\0')
+		return (*s1 == '\0');
+	if (*s2 == *s1)
+		return (*s1 != '\0' && wildcmp(s1 + 1, s2 + 1));
+	if (*s2 == '*')
+		return (wildcmp(s1, s2 + 1) || (*s1 != '\0' && wildcmp(s1 + 1, s2)));
+	return (0);
 }
