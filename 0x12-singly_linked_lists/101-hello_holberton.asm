@@ -1,23 +1,36 @@
-extern printf
+;
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --;
+;
+A 64 - bit program in assembly that prints Hello, Holberton, followed by a new line.;
+Compiled using nasm and gcc.;
+nasm - f elf64 101 - hello_holberton.asm &&gcc 101 - hello_holberton.o - o hello;
+;
+-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 
-	section.text
-		global main
+                                                                                                                              section.data
+                                                                                                                                  format db "%s",
+    10, 0 message db "Hello, Holberton", 0
 
-			main : push rbp
+                                         section.text extern printf;
+C function to be called
+    global main;
+main function
 
-					   mov rdi,
-	fmt
-		mov rsi,
-	msg
-		mov rax,
-	0 call printf
+    main : push rbp
+               mov rdi,
+           format
+               mov rsi,
+           message
+               mov rax,
+           0;
+can be xor rax, rax
+                    call printf;
+call C function.
 
-		pop rbp
+    pop rbp;
+restor stack
 
-			mov rax,
-	0 ret
-
-		section.data
-			msg : db "Hello, Holberton",
-	0 fmt : db "%s", 10, 0
-
+    mov rax,
+    0;
+normal, no error, return value ret;
+return
