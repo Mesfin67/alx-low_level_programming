@@ -4,7 +4,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * A struct that represents a printer.
+ *struct printer- a struct that represents a printer.
  */
 typedef struct printer
 {
