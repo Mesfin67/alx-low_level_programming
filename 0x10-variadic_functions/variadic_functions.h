@@ -3,7 +3,9 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-
+/**
+ * A struct that represents a printer.
+ */
 typedef struct printer
 {
 	char *symbol;
