@@ -3,13 +3,13 @@
 
 /**
  *_strlen - returns length of
+ *a string
  *@str: string to be counted
  *Return: returns length of string
  */
 int _strlen(char *str)
 {
 	int len = 0;
-
 	while (str)
 		len++;
 
@@ -18,6 +18,7 @@ int _strlen(char *str)
 
 /**
  *_strcopy - copy string pointed by src
+ *into dest variable
  *@dest:buffer storing string copy
  *@src: buffer storing string to copy
  *Return:returns copied string
@@ -38,7 +39,8 @@ char *_strcopy(char *dest, char *src)
  *@name: name of new dog
  *@age: age of new dog
  *@owner: owner of new dog
- *Return: returns NULL in case of failure
+ *Return: returns NULL in case
+ *of failure
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
