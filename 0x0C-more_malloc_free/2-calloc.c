@@ -2,10 +2,6 @@
 /**
  * _calloc - allocates memory using malloc and initializes it to zero
  *
- * This function allocates a block of memory `nmemb * size` bytes in size using malloc,
- * and initializes it to zero. If either `nmemb` or `size` is zero, the function
- * returns NULL. If the memory allocation fails, the function also returns NULL.
- *
  * @nmemb: number of elements
  * @size: size of each element in bytes
  *
