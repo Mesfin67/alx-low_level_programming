@@ -4,7 +4,7 @@
  * _islower - function name
  * @c : variable
  * description : checks if it is caselower
- *
+ * Return:(1) 0r (0)
  */
 int _islower(int c)
 {
