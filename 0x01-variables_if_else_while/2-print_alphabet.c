@@ -1,19 +1,17 @@
 #include <stdio.h>
 /**
  * main - entry point
- *
  * Description: a program that prints a-z
- *
  * Return: always 0
  */
 int main(void)
 {
-	char alp = 'a';
+	char alphabet = 'a';
 
-	while (alp <= 'z')
+	while (alphabet <= 'z')
 	{
-		putchar(alp);
-		++alp;
+		putchar(alphabet);
+		++alphabet;
 	}
 
 	putchar('\n');
