@@ -1,21 +1,19 @@
-#include "main.h"
+#include <stdio.h>
 
-/**
- * print_number - prints an integer to the console
- * @n: the integer to be printed
- */
-void print_number(int n)
+int main(void)
 {
-	unsigned int number = n;
+	int n;
+	int a[5];
+	int *p;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		number = -number;
-	}
+	a[2] = 1024;
+	p = &n;
 
-	if ((number / 10) > 0)
-		print_number(number / 10);
+	/* Set the value at the 6th index from the base address of p to 98. */
+	*(p + 5) = 98;
 
-	_putchar((number % 10) + '0');
+	/* Prints 98\n */
+	printf("a[2] = %d\n", a[2]);
+	return (0);
 }
+
